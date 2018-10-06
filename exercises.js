@@ -7,8 +7,6 @@ if(today === "Friday"){
   return "Let's Party!";
 };*/
 
-console.log('Hello world!');
-
 /*
 If/else statements = Evaluates (or checks) a condition. If the condition is true, the first code block is executed. If the condition is false, the second code block is executed instead.
 */
@@ -31,6 +29,19 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
 
+// irrelevant function
+function spacer(){
+  console.log(' ');
+}
+
+function canVote(age){
+  if (age >= 18){
+    return true;
+  }
+}
+
+spacer();
+console.log(canVote(18));
 
 /*
  * #2
