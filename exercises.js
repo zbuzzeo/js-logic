@@ -91,6 +91,7 @@ function isGreaterThan(first, second){
   }
 }
 
+spacer();
 console.log(isGreaterThan(8, 5));
 
 /*
