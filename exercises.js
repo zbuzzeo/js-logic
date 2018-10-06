@@ -478,6 +478,7 @@ function sumItUp(arr, exerciseNumber){
   return exerciseNumber + ' ' + 'The sum is ' + total;
 }
 
+spacer();
 console.log(sumItUp(numArray, 17));
 
 /*
@@ -493,6 +494,23 @@ console.log(sumItUp(numArray, 17));
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+var east = [];
+var west = [];
+
+function allStars(ballers, exerciseNumber){
+  for (var i = 0; i < ballers.length; i++){
+    if (i % 2 === 0){
+      east.push(ballers[i]);
+    }else{
+      west.push(ballers[i]);
+    }
+  }
+  return exerciseNumber + ' East array: ' + east + ' West array: ' + west;
+}
+
+spacer();
+console.log(allStars(players, 18));
+
 /*
  * #19
  * Function - subways
