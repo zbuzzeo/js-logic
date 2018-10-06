@@ -55,6 +55,16 @@ console.log(canVote(18));
  * Console.log your result.
 */
 
+var usersTruePassword = 'test1234';
+
+function login(password){
+  if (password === usersTruePassword){
+    return 'Login success!';
+  }
+}
+
+spacer();
+console.log(login('test1234'));
 
 /*
  * #3
