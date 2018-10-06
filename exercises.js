@@ -313,9 +313,9 @@ function graduation(credits, thesis, exerciseNumber){
 }
 
 spacer();
-console.log(graduation(120, true));
-console.log(graduation(100, true));
-console.log(graduation(120, false));
+console.log(graduation(120, true, 12));
+console.log(graduation(100, true, 12));
+console.log(graduation(120, false, 12));
 
 /*
  * #13
@@ -358,11 +358,53 @@ console.log(moneyTrain(150, 13));
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 35;
+var doughnutPrice = 4;
+var doughnutBought = 0;
+
+function buyDoughnut(exerciseNumber){
+  budget -= doughnutPrice;
+  doughnutBought++;
+  return exerciseNumber + ' Budget is ' + budget + ' and doughnutBought is ' + doughnutBought;
+}
+
+spacer();
+console.log(buyDoughnut(14));
+
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
 
+var day;
 
+function dailySpecials(special){
+  switch(special){
+    default:
+      day = 'Sunday';
+      return day;
+    case 'Mac and cheese':
+      day = 'Monday';
+      return day;
+    case 'Loaded ribs':
+      day = 'Tuesday';
+      return day;
+    case 'Boneless wings':
+      day = 'Wednesday';
+      return day;
+    case 'Orange chicken':
+      day = 'Thursday';
+      return day;
+    case 'Spam and rice':
+      day = 'Friday';
+      return day;
+    case 'Breakfast burrito':
+      day = 'Saturday';
+      return day;
+  }
+}
+
+spacer();
+console.log(dailySpecials('Orange chicken'));
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
