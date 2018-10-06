@@ -418,6 +418,8 @@ The for loop is made up for 3 parts:
 
 var toyotaModels = ["Corolla", "Prius", "4 Runner", "Camry", "Land Cruiser"];
 
+spacer();
+
 for (var i = 0; i<toyotaModels.length; i++){
    console.log("Toyota " + toyotaModels[i]);
 }
@@ -442,7 +444,8 @@ for (var i = 1; i <= 5; i++){
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
-  var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
+
+var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
 spacer();
 
@@ -465,7 +468,17 @@ for (var i = 0; i < myFavFoods.length; i++){
  * Console.log your result.
 */
 
+var numArray = [1, 11, 20, 8, 72]
+var total = 0;
 
+function sumItUp(arr, exerciseNumber){
+  for (var i = 0; i < arr.length; i++){
+    total += arr[i];
+  }
+  return exerciseNumber + ' ' + 'The sum is ' + total;
+}
+
+console.log(sumItUp(numArray, 17));
 
 /*
  * #18
