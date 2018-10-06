@@ -37,6 +37,8 @@ function spacer(){
 function canVote(age){
   if (age >= 18){
     return true;
+  }else{
+    return false;
   }
 }
 
@@ -60,6 +62,8 @@ var usersTruePassword = 'test1234';
 function login(password){
   if (password === usersTruePassword){
     return 'Login success!';
+  }else{
+    return 'The password you entered is incorrect.';
   }
 }
 
@@ -79,7 +83,15 @@ console.log(login('test1234'));
  * Console.log your result.
 */
 
+function isGreaterThan(first, second){
+  if (first > second){
+    return true;
+  }else{
+    return false;
+  }
+}
 
+console.log(isGreaterThan(8, 5));
 
 /*
  * #4
