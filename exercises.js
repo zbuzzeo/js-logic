@@ -7,6 +7,8 @@ if(today === "Friday"){
   return "Let's Party!";
 };*/
 
+console.log('Hello world!');
+
 /*
 If/else statements = Evaluates (or checks) a condition. If the condition is true, the first code block is executed. If the condition is false, the second code block is executed instead.
 */
