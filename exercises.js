@@ -568,7 +568,6 @@ function removeLetter(str, exerciseNumber){
   var newArray = [];
   for (var i = 0; i < str.length; i++){
     if (str[i] !== 'A' && str[i] !== 'a'){
-      console.log(str[i]);
       newArray.push(str[i]);
     }
   }
