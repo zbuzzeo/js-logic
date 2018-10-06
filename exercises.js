@@ -106,7 +106,16 @@ console.log(isGreaterThan(8, 5));
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+  if (boo === true){
+    return true;
+  }else{
+    return false;
+  }
+}
 
+spacer();
+console.log(mustBeTrue(true));
 
 /*
  * #5
