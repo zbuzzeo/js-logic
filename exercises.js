@@ -329,6 +329,20 @@ console.log(graduation(120, false));
  * Console.log your result.
 */ 
 
+function moneyTrain(speed, exerciseNumber){
+  if (speed < 50){
+    return exerciseNumber + ' ' + 'You are riding Honolulu\'s Rail.';
+  }else if (speed < 100){
+    return exerciseNumber + ' ' + 'You are riding an Amtrak.';
+  }else if (speed >= 100){
+    return exerciseNumber + ' ' + 'Now you ballin\' in the Shinkansen!';
+  }
+}
+
+spacer();
+console.log(moneyTrain(10, 13));
+console.log(moneyTrain(90, 13));
+console.log(moneyTrain(150, 13));
 
 /*
  * #14
