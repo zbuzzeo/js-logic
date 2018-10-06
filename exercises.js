@@ -203,7 +203,17 @@ console.log(notEqual('hey', 'hey'));
  * Console.log your result.
 */ 
 
+function spareChange(money){
+  if (money > 100){
+    return true;
+  }else{
+    return false;
+  }
+}
 
+spacer();
+console.log(spareChange(100));
+console.log(spareChange(101));
 
 /*
  * #9
