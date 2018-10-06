@@ -34,11 +34,11 @@ function spacer(){
   console.log(' ');
 }
 
-function canVote(age){
+function canVote(age, exerciseNumber){
   if (age >= 18){
-    return true;
+    return exerciseNumber + ' ' + true;
   }else{
-    return false;
+    return exerciseNumber + ' ' +  false;
   }
 }
 
@@ -59,16 +59,16 @@ console.log(canVote(18));
 
 var usersTruePassword = 'test1234';
 
-function login(password){
+function login(password, exerciseNumber){
   if (password === usersTruePassword){
-    return 'Login success!';
+    return exerciseNumber + ' ' +  'Login success!';
   }else{
-    return 'The password you entered is incorrect.';
+    return exerciseNumber + ' ' + 'The password you entered is incorrect.';
   }
 }
 
 spacer();
-console.log(login('test1234'));
+console.log(login('test1234', 2));
 
 /*
  * #3
@@ -83,16 +83,16 @@ console.log(login('test1234'));
  * Console.log your result.
 */
 
-function isGreaterThan(first, second){
+function isGreaterThan(first, second, exerciseNumber){
   if (first > second){
-    return true;
+    return exerciseNumber + ' ' + true;
   }else{
-    return false;
+    return exerciseNumber + ' ' + false;
   }
 }
 
 spacer();
-console.log(isGreaterThan(8, 5));
+console.log(isGreaterThan(8, 5, 3));
 
 /*
  * #4
@@ -106,16 +106,16 @@ console.log(isGreaterThan(8, 5));
  * Console.log your result.
 */
 
-function mustBeTrue(boo){
+function mustBeTrue(boo, exerciseNumber){
   if (boo === true){
-    return true;
+    return exerciseNumber + ' ' + true;
   }else{
-    return false;
+    return exerciseNumber + ' ' + false;
   }
 }
 
 spacer();
-console.log(mustBeTrue(true));
+console.log(mustBeTrue(true, 4));
 
 /*
  * #5
@@ -129,17 +129,17 @@ console.log(mustBeTrue(true));
  * Console.log your result.
 */
 
-function bigBird(word){
+function bigBird(word, exerciseNumber){
   if (word.length === 3){
-    return 'Word to Big Bird!';
+    return exerciseNumber +  ' ' + 'Word to Big Bird!';
   }else{
-    return 'The word ' + '\'' + word + '\'' + ' is longer than three characters.';
+    return exerciseNumber + ' ' + 'The word ' + '\'' + word + '\'' + ' is longer than three characters.';
   }
 }
 
 spacer();
-console.log(bigBird('Big'));
-console.log(bigBird('Bird'));
+console.log(bigBird('Big', 5));
+console.log(bigBird('Bird', 5));
 
 /*
  * #6
@@ -154,17 +154,17 @@ console.log(bigBird('Bird'));
  * Console.log your result.
 */
 
-function isEqual(first, second){
+function isEqual(first, second, exerciseNumber){
   if (first === second){
-    return 'You look mahvelous!';
+    return exerciseNumber + ' ' + 'You look mahvelous!';
   }else{
-    return 'I don\'t know who you are anymore.';
+    return exerciseNumber + ' ' + 'I don\'t know who you are anymore.';
   }
 }
 
 spacer();
-console.log(isEqual('hi', 'hi'));
-console.log(isEqual('hey', 'you'));
+console.log(isEqual('hi', 'hi', 6));
+console.log(isEqual('hey', 'you', 6));
 
 /*
  * #7
@@ -179,17 +179,17 @@ console.log(isEqual('hey', 'you'));
  * Console.log your result.
 */
 
-function notEqual(first, second){
+function notEqual(first, second, exerciseNumber){
   if (first !== second){
-    return 'Opposites do attract.';
+    return exerciseNumber + ' ' + 'Opposites do attract.';
   }else{
-    return 'Cause it\'s like you\'re my mirror.';
+    return exerciseNumber + ' ' + 'Cause it\'s like you\'re my mirror.';
   }
 }
 
 spacer();
-console.log(notEqual('yo', 'hi'));
-console.log(notEqual('hey', 'hey'));
+console.log(notEqual('yo', 'hi', 7));
+console.log(notEqual('hey', 'hey', 7));
 
 /*
  * #8
@@ -203,17 +203,17 @@ console.log(notEqual('hey', 'hey'));
  * Console.log your result.
 */ 
 
-function spareChange(money){
+function spareChange(money, exerciseNumber){
   if (money > 100){
-    return true;
+    return exerciseNumber + ' ' + true;
   }else{
-    return false;
+    return exerciseNumber + ' ' + false;
   }
 }
 
 spacer();
-console.log(spareChange(100));
-console.log(spareChange(101));
+console.log(spareChange(100, 8));
+console.log(spareChange(101, 8));
 
 /*
  * #9
@@ -229,7 +229,17 @@ console.log(spareChange(101));
  * Console.log your result.
 */ 
 
+function dirty30(one, two, three, exerciseNumber){
+  if (one + two + three > 30){
+    return exerciseNumber + ' ' + true;
+  }else{
+    return exerciseNumber + ' ' + false;
+  }
+}
 
+spacer();
+console.log(dirty30(10, 10, 10, 9));
+console.log(dirty30(30, 30, 30, 9));
 
 /*
  * #10
