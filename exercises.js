@@ -523,8 +523,18 @@ console.log(allStars(players, 18));
  * Console.log your results.
 */ 
 
-  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+function subways(special, exerciseNumber){
+  for (var i = 0; i < special.length; i++){
+    if (i % 2 !== 0){
+      special[i] = 'Classic Tuna';
+    }
+  }
+  return exerciseNumber + ' The array: ' + special;
+}
+
+console.log(subways(subOftheDay, 19));
 
 /*
 Final Boss
