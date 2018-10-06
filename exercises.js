@@ -253,8 +253,17 @@ console.log(dirty30(30, 30, 30, 9));
  * Console.log your result.
 */ 
 
+function evenStevens(num, exerciseNumber){
+  if (num % 2 === 0){
+    return exerciseNumber + ' ' + true;
+  }else{
+    return exerciseNumber + ' ' + false;
+  }
+}
 
-
+spacer();
+console.log(evenStevens(1000, 10));
+console.log(evenStevens(1001, 10));
 
 /*
  * #11
