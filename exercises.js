@@ -422,7 +422,6 @@ for (var i = 0; i<toyotaModels.length; i++){
    console.log("Toyota " + toyotaModels[i]);
 }
 
-
 /* 
  * #15
  * Create a for loop that will iterate 5 times and console.log the following:
@@ -433,6 +432,11 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+spacer();
+
+for (var i = 1; i <= 5; i++){
+  console.log('Player: ' + i);
+}
 
 /* 
  * #16
