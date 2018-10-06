@@ -179,6 +179,17 @@ console.log(isEqual('hey', 'you'));
  * Console.log your result.
 */
 
+function notEqual(first, second){
+  if (first !== second){
+    return 'Opposites do attract.';
+  }else{
+    return 'Cause it\'s like you\'re my mirror.';
+  }
+}
+
+spacer();
+console.log(notEqual('yo', 'hi'));
+console.log(notEqual('hey', 'hey'));
 
 /*
  * #8
