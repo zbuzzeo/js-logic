@@ -129,7 +129,17 @@ console.log(mustBeTrue(true));
  * Console.log your result.
 */
 
+function bigBird(word){
+  if (word.length === 3){
+    return 'Word to Big Bird!';
+  }else{
+    return 'The word ' + '\'' + word + '\'' + ' is longer than three characters.';
+  }
+}
 
+spacer();
+console.log(bigBird('Big'));
+console.log(bigBird('Bird'));
 
 /*
  * #6
