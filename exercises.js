@@ -278,6 +278,18 @@ console.log(evenStevens(1001, 10));
  * Console.log your result.
 */ 
 
+function daClub(cover, age, exerciseNumber){
+  if ((cover >= 21) && (age >= 21)){
+    return exerciseNumber + ' ' + 'Welcome to the Legends Lounge.';
+  }else{
+    return exerciseNumber + ' ' + 'Chuck E. Cheese is across the street.';
+  }
+}
+
+spacer();
+console.log(daClub(21, 21, 11));
+console.log(daClub(21, 15, 11));
+console.log(daClub(15, 15, 11));
 
 /*
  * #12
@@ -292,7 +304,18 @@ console.log(evenStevens(1001, 10));
  * Console.log your result.
 */ 
 
+function graduation(credits, thesis, exerciseNumber){
+  if ((credits >= 120) || (thesis === true)){
+    return exerciseNumber + ' ' + 'Congratulations on a job well done.'
+  }else{
+    return exerciseNumber + ' ' + 'See you in summer school.';
+  }
+}
 
+spacer();
+console.log(graduation(120, true));
+console.log(graduation(100, true));
+console.log(graduation(120, false));
 
 /*
  * #13
