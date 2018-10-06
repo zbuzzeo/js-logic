@@ -34,6 +34,19 @@ function spacer(){
   console.log(' ');
 }
 
+/* for future reference, write spacer() like this:
+
+function spacer(exerciseNumber){
+  console.log(' ');
+  console.log(exerciseNumber);
+}
+
+spacer(1);
+spacer(17);
+spacer(21);
+
+*/
+
 function canVote(age, exerciseNumber){
   if (age >= 18){
     return exerciseNumber + ' ' + true;
@@ -534,6 +547,7 @@ function subways(special, exerciseNumber){
   return exerciseNumber + ' The array: ' + special;
 }
 
+spacer();
 console.log(subways(subOftheDay, 19));
 
 /*
@@ -549,16 +563,17 @@ Final Boss
 */
 
 var phrase = "An apple a day keeps Alice feeling awesome!";
- 
-  
-  
 
+function removeLetter(str, exerciseNumber){
+  var newArray = [];
+  for (var i = 0; i < str.length; i++){
+    if (str[i] !== 'A' && str[i] !== 'a'){
+      console.log(str[i]);
+      newArray.push(str[i]);
+    }
+  }
+  return exerciseNumber + ' newArray contains: ' + newArray.join(' ');
+}
 
-
-
-
-
-
-
-
-
+spacer();
+console.log(removeLetter(phrase, 20));
